@@ -23,7 +23,7 @@ else
 endif
 
 PRODUCT_PACKAGES += \
-   libxlog \
+   libmtk_symbols \
    libstlport
 
 PRODUCT_COPY_FILES += \
@@ -74,7 +74,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.project.rc:root/init.project.rc \
     $(LOCAL_PATH)/rootdir/init.rc:root/init.rc \
     $(LOCAL_PATH)/rootdir/init.ssd.rc:root/init.ssd.rc \
-    $(LOCAL_PATH)/rootdir/init.xlog.rc:root/init.xlog.rc \
     $(LOCAL_PATH)/rootdir/meta_init.modem.rc:root/meta_init.modem.rc \
     $(LOCAL_PATH)/rootdir/meta_init.project.rc:root/meta_init.project.rc \
     $(LOCAL_PATH)/rootdir/meta_init.rc:root/meta_init.rc \
@@ -145,7 +144,7 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 
 # Charger
 PRODUCT_PACKAGES += \
-      charger_res_images
+    charger_res_images
 
 # Wifi
 PRODUCT_PACKAGES += \
@@ -155,7 +154,6 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
     hostapd_cli \
-    dhcpcd.conf \
     wpa_supplicant \
     wpa_supplicant.conf
     
@@ -210,7 +208,8 @@ PRODUCT_PACKAGES += \
 
 # FMRadio
 PRODUCT_PACKAGES += \
-    FmRadio \
+    libfmjni \
+    FMRadio \
     libmtkplayer
 
 # NFC
