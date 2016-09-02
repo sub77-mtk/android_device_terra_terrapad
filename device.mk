@@ -219,9 +219,6 @@ PRODUCT_PACKAGES += \
     Nfc \
     Tag
 
-# Camera
-PRODUCT_PACKAGES += \
-    Snap
 
 # Lights
 PRODUCT_PACKAGES += \
