@@ -161,6 +161,8 @@ endif
 $(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
 
 # SELinux
-BOARD_SEPOLICY_DIRS := \
-       device/jiayu/s3_h560/sepolicy
+BOARD_SEPOLICY_DIRS := $(LOCAL_PATH)/sepolicy
+
+# Seccomp filter
+BOARD_SECCOMP_POLICY := $(LOCAL_PATH)/seccomp
 
