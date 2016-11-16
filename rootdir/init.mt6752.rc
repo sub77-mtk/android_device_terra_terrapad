@@ -1,6 +1,7 @@
 import /init.project.rc
 import /init.ssd.rc
 import /init.modem.rc
+import /init.performance.rc
 
 on init
     export LD_PRELOAD "libmtk_symbols.so"
@@ -593,9 +594,9 @@ on post-fs-data
     chmod 0660 /dev/sec
     chown root system /dev/sec
 
-    # FM Radio device node
-    exec /system/xbin/mknod /dev/fm c 230 0
-    chmod 0666 /dev/fm
+   # FM Radio device node
+    mknod /dev/fm     c 193 0;
+    chmod 0660 /dev/fm
     chown system media /dev/fm
 
     # device apc settings
