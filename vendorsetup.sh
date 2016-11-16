@@ -21,5 +21,5 @@
 # function: add_lunch_combo generic-eng
 
 for var in eng user userdebug; do
-  add_lunch_combo cm_s3_h560-$var
+  add_lunch_combo cm_aio_row-$var
 done

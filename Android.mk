@@ -1,6 +1,6 @@
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),s3_h560)
+ifeq ($(TARGET_DEVICE),aio_row)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 

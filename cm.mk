@@ -4,8 +4,8 @@ $(call inherit-product, device/jiayu/s3_h560/device_s3_h560.mk)
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := s3_h560
-PRODUCT_NAME := cm_s3_h560
-PRODUCT_BRAND := Jiayu
-PRODUCT_MODEL := S3
-PRODUCT_MANUFACTURER := Jiayu
+PRODUCT_DEVICE := aio_row
+PRODUCT_NAME := cm_aio_row
+PRODUCT_BRAND := Lenovo A7000-a
+PRODUCT_MODEL := A7000-a
+PRODUCT_MANUFACTURER := Lenovo

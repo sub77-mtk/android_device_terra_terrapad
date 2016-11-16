@@ -4,24 +4,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/jiayu/s3_h560/device.mk)
+$(call inherit-product, device/lenovo/aio_row/device.mk)
 
 # Release name
-PRODUCT_RELEASE_NAME := s3_h560
+PRODUCT_RELEASE_NAME := aio_row
 
 EXTENDED_FONT_FOOTPRINT := true
 
-PRODUCT_DEVICE := s3_h560
-PRODUCT_NAME := full_s3_h560
-PRODUCT_BRAND := Jiayu
-PRODUCT_MODEL := S3
-PRODUCT_MANUFACTURER := Jiayu
+PRODUCT_DEVICE := aio_row
+PRODUCT_NAME := full_aio_row
+PRODUCT_BRAND := Lenovo
+PRODUCT_MODEL := A7000-a
+PRODUCT_MANUFACTURER := Lenovo
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
 # Boot animation
-TARGET_SCREEN_HEIGHT      := 1920
-TARGET_SCREEN_WIDTH       := 1080
-TARGET_BOOTANIMATION_NAME := 1080
+TARGET_SCREEN_HEIGHT      := 1280
+TARGET_SCREEN_WIDTH       := 720
+TARGET_BOOTANIMATION_NAME := 720
 
 PRODUCT_DEFAULT_LANGUAGE := en
-PRODUCT_DEFAULT_REGION   := US
+PRODUCT_DEFAULT_REGION   := IN

@@ -1,15 +1,15 @@
-$(call inherit-product, vendor/jiayu/s3_h560/s3_h560-vendor-blobs.mk)
+$(call inherit-product, vendor/lenovo/aio_row/aio_row-vendor-blobs.mk)
 
-LOCAL_PATH := device/jiayu/s3_h560
+LOCAL_PATH := device/lenovo/aio_row
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal xhdpi xxhdpi
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Recovery allowed devices
-TARGET_OTA_ASSERT_DEVICE := h560,s3_h560
+TARGET_OTA_ASSERT_DEVICE := a7000,aio_row
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
@@ -194,12 +194,12 @@ PRODUCT_PACKAGES += \
     FMRadio
 
 # NFC
-PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    libmtknfc_dynamic_load_jni \
-    libnfc_mt6605_jni \
-    Nfc \
-    Tag
+#PRODUCT_PACKAGES += \
+#    com.android.nfc_extras \
+#    libmtknfc_dynamic_load_jni \
+#    libnfc_mt6605_jni \
+#    Nfc \
+#    Tag
 
 
 # Lights
